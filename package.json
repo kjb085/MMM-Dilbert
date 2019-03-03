@@ -1,0 +1,23 @@
+{
+  "name": "mmm-dilbert",
+  "version": "1.0.0",
+  "description": "Magic Mirror 2 module to display Dilbert comics",
+  "main": "MMM-Dilbert.js",
+  "scripts": {
+    "view-complete": "npm run compile-hb && npm run build-css",
+    "compile-hb": "handlebars ./view/view.hb.html -f ./view/view.chb.js -c handlebars/runtime",
+    "build-css": "node-sass --include-path scss assets/MMM-Dilbert.scss assets/MMM-Dilbert.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "handlebars": "^4.0.11",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5"
+  }
+}

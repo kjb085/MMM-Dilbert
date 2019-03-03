@@ -1,0 +1,34 @@
+<!-- <div id="mmm-dilbert"> ## Included by module ## -->
+    {{#if header.show}}
+        <header>
+            {{#if header.isTitle}}
+                {{comic.title}}
+            {{else}}
+                Daily Dilbert
+            {{/if}}
+        </header>
+    {{/if}}
+    <div class="mmm-dd-container" style="{{customStyles.container}}">
+        <img class="comic" src="{{comic.source}}" />
+        <div class="info">
+            {{#if info.showTitle}}
+                <div class="title" style="{{customStyles.title}}">
+                    {{comic.title}}
+                </div>
+            {{/if}}
+            {{#if info.showRating}}
+                <div class="stars" style="{{customStyles.stars}}">
+                    {{#times info.formatedRating.full}}
+                        <i class="fa fa-star"></i>
+                    {{/times}}
+                    {{#times info.formatedRating.half}}
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                    {{/times}}
+                    {{#times info.formatedRating.empty}}
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    {{/times}}
+                </div>
+            {{/if}}
+        </div>
+    </div>
+<!-- </div> -->
