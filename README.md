@@ -1,16 +1,16 @@
 # MMM-Dilbert #
 
-This module is used to display Dilbert comics from www.dilbert.com created by the great Scott Adams ([@ScottAdamsSays](https://twitter.com/ScottAdamsSays)). Despite limited functionality, the module has considerable configurability and comes with an autocorrect feature to ensure that the module can overcome any temporary networking hiccups may otherwise require the mirror to be restarted to overcome.
+This module is used to display Dilbert comics from www.dilbert.com created by the great Scott Adams ([@ScottAdamsSays](https://twitter.com/ScottAdamsSays)). Despite limited functionality, the module has considerable configurability and comes with an autocorrect feature to ensure that the module can overcome any temporary networking hiccups that would otherwise require the mirror to be restarted to overcome.
 
 ## End User Dependencies ##
 
-Just an installation of [Magic Mirror<sup>2</sup>](https://github.com/MichMich/MagicMirror) and a have working internet connection.
+Just an installation of [Magic Mirror<sup>2</sup>](https://github.com/MichMich/MagicMirror) and a working internet connection.
 
 ## Installation ##
 
 1. Run `git clone https://github.com/kjb085/MMM-Dilbert.git` in the directory `~/MagicMirror/modules`
 2. Run `npm install --production` to install the required dependencies
-3. Add MMM-Dilber to your config file `~/MagicMirror/config/config.js`
+3. Add MMM-Dilbert to your config file `~/MagicMirror/config/config.js`
 
 ```
 {
@@ -66,16 +66,12 @@ Option  | Default | Description
 `refreshPeriod` | `2` | How frequently to attempt to request valid comic data from the site in minutes
 `autoCorrectAttemptLimit` | `5` | How many attempts to make before aborting auto correction and falling back to a default update state
 
-
 ## Dev Dependencies ##
 
 If you plan on modifying the existing code, these tools will be helpful as the the css was created using sass. Once you have npm installed, simply run `npm install` for the subsequent npm packages to be installed.
 
-* npm
 * node-sass
 * nodemon
-* handlebars
-* cheerio
 
 **Note**: To make use of the installed packages run the below commands:
 
